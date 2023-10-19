@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Urna Eletônica</title>
+</head>
+<body>
+    <div class="urn">
+        <div class="screen">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <div class="d-1-1">
+                        <span>SEU VOTO PARA:</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>PREFEITO</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="number blink"></div>
+                        <div class="number"></div>
+                    </div>
+                    <div class="d-1-4">
+                        <span>
+                            NOME: Fulano de Assis<br/>
+                            VICE: Beutrano Carvalho<br/>
+                            PARTIDO: PDF
+                        </span>
+                    </div>
+                </div>
+                <div class="d-1-right">
+                    <div class="d-1-img">
+                        <img src="images/77222.jpg">
+                        Prefeito(a)
+                    </div>
+                    <div class="d-1-img small">
+                        <img src="images/38111.jpg">
+                        Vice-Prefeito(a)
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                Aperte a tecla: <br/>
+                CONFIRMAR para confirmar este voto<br/>
+                CORRIGE para reiniciar este voto
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="keyboardLine">
+                <div class="keyboardButton" onclick="clicked('1')">1</div>
+                <div class="keyboardButton" onclick="clicked('2')">2</div>
+                <div class="keyboardButton" onclick="clicked('3')">3</div>
+            </div>
+            <div class="keyboardLine">
+                <div class="keyboardButton" onclick="clicked('4')">4</div>
+                <div class="keyboardButton" onclick="clicked('5')">5</div>
+                <div class="keyboardButton" onclick="clicked('6')">6</div>
+            </div>
+            <div class="keyboardLine">
+                <div class="keyboardButton" onclick="clicked('7')">7</div>
+                <div class="keyboardButton" onclick="clicked('8')">8</div>
+                <div class="keyboardButton" onclick="clicked('9')">9</div>
+            </div>
+            <div class="keyboardLine">
+                <div class="keyboardButton" onclick="clicked('0')">0</div>
+            </div>
+            <div class="keyboardLine">
+                <div class="keyboardButton whiteButton" onclick="whiteButton()">BRANCO</div>
+                <div class="keyboardButton correctButton" onclick="correct()">CORRIGE</div>
+                <div class="keyboardButton confirmButton" onclick="confirmVote()">CONFIRMAR</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="assets/js/stages.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

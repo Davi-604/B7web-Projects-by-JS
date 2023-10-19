@@ -1,0 +1,47 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fightArea {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+#char,
+#monster {
+    flex: 1;
+}
+
+.lifeBar {
+    height: 13px;
+    border: solid 2px #000;
+    border-radius: 5px;
+}
+.lifeBar .bar {
+    height: inherit;
+    background-color: #f00;
+    border-radius: 4px;
+}
+.button,
+.name {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.atackButton {
+    cursor: pointer;
+}
+
+
+.log {
+    overflow-y: scroll;
+    height: 200px;
+    border: dotted 1px #999; 
+    text-align: center;
+    padding-top: 20px;
+}
+.log li {
+    list-style: none;
+    margin-top: 5px;
+    font-weight: bold;
+}
